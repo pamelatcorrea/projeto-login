@@ -30,7 +30,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*pra esconder a foto na borda*/
 
     background-color:#E8E8E8;
@@ -41,6 +40,7 @@ section#login {
 
     transition: width .3s, height .3s; /*efeito de animação*/
     transition-timing-function: ease; /*suavizar ela*/
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -67,15 +67,38 @@ div#formulario > p {
 
 form > div.campo {
     background-color: #DAAC8D;
+    border: 2px solid #028b8d6f;
     display: block; /*toda div já é um bloco*/
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px; /*cima e baixo 5, esquerda direita 0*/
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #f6d9c55b;
+    font-size: 1em;
+    width: calc(100% - 44.5px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 2px;
+    transform: translateY(-12px); /*colocar uma animação, transformação, por último*/
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {

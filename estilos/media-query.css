@@ -15,6 +15,7 @@ grandes desktops: acima de 1280px
 
     section#login {
         width: 90vw; /*pra ficar maior quando aumentar*/
+        height: 300px;
     }
 
     section#login > div#imagem {
@@ -35,6 +36,7 @@ grandes desktops: acima de 1280px
     }
     section#login {
         width: 1020px;
+        height: 350px;
     }
     
     section#login > div#imagem {
@@ -54,5 +56,6 @@ grandes desktops: acima de 1280px
 
     div#formulario > p {
     font-size: 1em;
+    margin: 20px 0px;
 }
 }
