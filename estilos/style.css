@@ -64,3 +64,55 @@ div#formulario > h1 {
 div#formulario > p {
     font-size: 0.8em;
 }
+
+form > div.campo {
+    background-color: #DAAC8D;
+    display: block; /*toda div já é um bloco*/
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px; /*cima e baixo 5, esquerda direita 0*/
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 0.9em;
+    width: 100%;
+    height: 40px;
+    background-color: #017072;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #004d4e;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 0.9;
+    width: 100%;
+    height: 30px;
+    padding-top: 2px;
+    margin-top: 5px;
+    background-color: white;
+    color: #003233;
+    border: 1px solid #004d4e;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #00b0b3;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
